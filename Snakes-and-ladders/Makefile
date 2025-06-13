@@ -4,7 +4,8 @@ CFLAGS = -Wall -Wextra -Werror -Iboard
 SRC = \
     main.c \
     board/board.c \
-    board/board_1.c
+    board/board_1.c \
+    simulator.c
 
 OBJ = $(SRC:.c=.o)
 BIN = play
