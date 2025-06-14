@@ -24,8 +24,8 @@ int main(void)
 
     int board_num;
 
-    printf("Choose a board (1 - 3): ");
-    if (scanf("%d", &board_num) < 1 || board_num > 3)
+    printf("Choose a board (1 - 4): ");
+    if (scanf("%d", &board_num) < 1 || board_num > 4)
     {
         fprintf(stderr, "Invalid input. Exiting.\n");
         return EXIT_FAILURE;
@@ -53,7 +53,7 @@ int main(void)
     // print_graph(graph); // show graph
     free_graph(graph);
 
-    // simulation parameters (eventuell interactive)
+    // simulation parameters
     int simulations = 1000;
     int max_steps = 500;
 

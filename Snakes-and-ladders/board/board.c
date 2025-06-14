@@ -6,6 +6,7 @@
 board_t *create_board1(void);
 board_t *create_board2(void);
 board_t *create_board3(void);
+board_t *create_board4(void);
 
 board_t *load_board(int board_number)
 {
@@ -14,6 +15,7 @@ board_t *load_board(int board_number)
         case 1: return create_board1();
         case 2: return create_board2();
         case 3: return create_board3();
+        case 4: return create_board4();
         default:
             fprintf(stderr, "Invalid board number: %d\n", board_number);
             return NULL;

@@ -7,6 +7,7 @@ SRC = \
     board/board_1.c \
     board/board_2.c \
     board/board_3.c \
+    board/board_4.c \
     simulator.c \
     graph.c
 
