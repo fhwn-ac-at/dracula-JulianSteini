@@ -5,6 +5,8 @@ SRC = \
     main.c \
     board/board.c \
     board/board_1.c \
+    board/board_2.c \
+    board/board_3.c \
     simulator.c \
     graph.c
 

@@ -1,6 +1,8 @@
 #include "board.h"
 #include <stdlib.h>
 
+// First small test board
+
 board_t *create_board1(void)
 {
     board_t *board = malloc(sizeof(board_t));

@@ -50,7 +50,7 @@ int main(void)
     }
 
     graph_t *graph = build_graph(board, dice_sides);
-    print_graph(graph); // show graph
+    // print_graph(graph); // show graph
     free_graph(graph);
 
     // simulation parameters (eventuell interactive)
@@ -107,7 +107,7 @@ int main(void)
     }
 
     printf("\n Simulation Results: \n");
-    printf("---------------------\n");
+    printf("--------------------------\n");
 
     printf("Successful games: %d / %d\n", wins, simulations);
     if (wins > 0)
@@ -145,7 +145,7 @@ int main(void)
     {
         double freq = 100.0 * ladder_total[i] / simulations;
 
-        printf("  Ladder %d (%d -> %d): %d times (%.2f%%)\n", i + 1, board->ladders[i].start, board->ladders[i].end, ladder_total[i], freq);
+        printf("Ladder %d (%d -> %d): %d times (%.2f%%)\n", i + 1, board->ladders[i].start, board->ladders[i].end, ladder_total[i], freq);
     }
 
     free_board(board);
