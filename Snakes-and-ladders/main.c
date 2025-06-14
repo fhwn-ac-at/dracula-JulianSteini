@@ -3,6 +3,7 @@
 #include <time.h>
 #include "board/board.h"
 #include "simulator.h"
+#include "graph.h"
 
 // show information about chosen board
 void print_board_info(const board_t *board)
@@ -47,6 +48,10 @@ int main(void)
     {
         dice_sides = 6;
     }
+
+    graph_t *graph = build_graph(board, dice_sides);
+    print_graph(graph); // show graph
+    free_graph(graph);
 
     // simulation parameters (eventuell interactive)
     int simulations = 1000;

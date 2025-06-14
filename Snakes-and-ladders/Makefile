@@ -5,7 +5,8 @@ SRC = \
     main.c \
     board/board.c \
     board/board_1.c \
-    simulator.c
+    simulator.c \
+    graph.c
 
 OBJ = $(SRC:.c=.o)
 BIN = play
